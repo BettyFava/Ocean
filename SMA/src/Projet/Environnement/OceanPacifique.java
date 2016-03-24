@@ -12,7 +12,6 @@ import java.util.Random;
  * Created by BettyFlop on 24/02/2016.
  */
 public class OceanPacifique extends Observable {
-    // Attributs
     public Poisson[] poissons;
     public Requin requin;
     public ArrayList<ZoneInterdite> obstacles;
@@ -72,7 +71,7 @@ public class OceanPacifique extends Observable {
      * Met à jour le requin
      */
     protected void MiseAJourRequin() {
-        requin.MiseAJour(poissons, obstacles, requin, largeur, hauteur);
+        requin.MiseAJour( obstacles,  largeur, hauteur);
 
     }
 
